@@ -1,225 +1,806 @@
 <!DOCTYPE html>
-<html  >
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.10.7, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="google-site-verification" content="P-6XJyp63erlP_bmwIg5NUwRBc6krRsygUAFWlQz6AA" />
-  <link rel="shortcut icon" href="assets/images/main.JPG" type="image/x-icon">
-  <meta name="description" content="Salade Vi 鮮拌碎沙拉 地址：桃園市大園區高鐵北路二段182號一樓 。電話：03-287-3911">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salade Vi 鮮拌碎沙拉｜C'est la vie，這就是生活。桃園市大園區高鐵北路二段182號1樓，每天 11:00-21:00，療癒又銷魂的鮮拌碎沙拉。" />
+  <meta name="theme-color" content="#050505" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Salade Vi 鮮拌碎沙拉" />
+  <meta property="og:description" content="希望大家可以大口吃菜享受生活。深色美食風格的鮮拌碎沙拉品牌網站。" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="Salade Vi 鮮拌碎沙拉" />
+  <title>Salade Vi 鮮拌碎沙拉</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #050505;
+      --panel: #111111;
+      --panel-2: #181818;
+      --text: #f7f1e8;
+      --muted: #cbbfae;
+      --green: #00ff88;
+      --gold: #ffd700;
+      --line: rgba(255, 255, 255, 0.08);
+      --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+      --radius: 24px;
+      --max: 1180px;
+    }
 
-  <title>Salade Vi 鮮拌碎沙拉  </title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(0,255,136,0.08), transparent 26%),
+        radial-gradient(circle at left center, rgba(255,215,0,0.06), transparent 24%),
+        linear-gradient(180deg, #050505 0%, #090909 35%, #050505 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
+    img { max-width: 100%; display: block; }
 
+    .container {
+      width: min(calc(100% - 2rem), var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: rgba(5, 5, 5, 0.78);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.95rem 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(0,255,136,0.2), rgba(255,215,0,0.28));
+      border: 1px solid rgba(255,255,255,0.12);
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      box-shadow: inset 0 0 24px rgba(255,255,255,0.05), 0 0 25px rgba(0,255,136,0.08);
+    }
+
+    .brand-title {
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.1rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: #f3eadf;
+      font-size: 0.96rem;
+      opacity: 0.88;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: var(--green);
+      opacity: 1;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 6.5rem 0 4rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--gold);
+      font-size: 0.92rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1,
+    .section-heading h2 {
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      line-height: 0.96;
+      letter-spacing: 0.01em;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.2rem, 7vw, 6.3rem);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 .accent,
+    .accent {
+      color: var(--green);
+      text-shadow: 0 0 18px rgba(0,255,136,0.16);
+    }
+
+    .hero-lead {
+      font-size: clamp(1.05rem, 2vw, 1.28rem);
+      color: #f2e7d8;
+      max-width: 44rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-copy {
+      max-width: 42rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 52px;
+      padding: 0.85rem 1.35rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--green), #16c56d);
+      color: #02140c;
+      box-shadow: 0 18px 38px rgba(0,255,136,0.18);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.03);
+      border-color: rgba(255,255,255,0.12);
+      color: var(--text);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .stat {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card,
+    .photo-card,
+    .contact-card,
+    .info-card,
+    .map-card,
+    .counter-card {
+      background: linear-gradient(180deg, rgba(19,19,19,0.96), rgba(12,12,12,0.95));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 1.3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-plate {
+      aspect-ratio: 4 / 5;
+      border-radius: 22px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.55)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='1125' viewBox='0 0 900 1125'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%23121412'/%3E%3Cstop offset='1' stop-color='%23201f18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='1125' fill='url(%23g)'/%3E%3Ccircle cx='670' cy='250' r='170' fill='rgba(0,255,136,0.12)'/%3E%3Ccircle cx='220' cy='870' r='190' fill='rgba(255,215,0,0.1)'/%3E%3Cg opacity='0.95'%3E%3Cellipse cx='450' cy='565' rx='275' ry='275' fill='%23f3eadf'/%3E%3Cellipse cx='450' cy='565' rx='238' ry='238' fill='%23181818'/%3E%3Ccircle cx='350' cy='465' r='74' fill='%2300ff88' fill-opacity='0.6'/%3E%3Ccircle cx='520' cy='430' r='64' fill='%23ffd700' fill-opacity='0.6'/%3E%3Ccircle cx='585' cy='555' r='78' fill='%23ff8056' fill-opacity='0.5'/%3E%3Ccircle cx='410' cy='620' r='98' fill='%2382d95b' fill-opacity='0.55'/%3E%3Ccircle cx='530' cy='685' r='68' fill='%23e7f4a3' fill-opacity='0.58'/%3E%3Ccircle cx='300' cy='675' r='60' fill='%23ffa94d' fill-opacity='0.48'/%3E%3C/g%3E%3Ctext x='50%25' y='94%25' text-anchor='middle' fill='%23f7f1e8' font-family='sans-serif' font-size='38' opacity='0.92'%3EFOOD IMAGE PLACEHOLDER%3C/text%3E%3C/svg%3E") center/cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.25rem;
+    }
+
+    .hero-plate::before {
+      content: "主廚風味碎沙拉";
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(5,5,5,0.7);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--gold);
+      font-size: 0.88rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      letter-spacing: 0.08em;
+    }
+
+    .plate-note {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 1rem;
+      background: linear-gradient(180deg, rgba(5,5,5,0.18), rgba(5,5,5,0.72));
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      padding: 1rem;
+    }
+
+    .plate-note strong { font-size: 1.08rem; }
+    .plate-note span { color: var(--muted); font-size: 0.95rem; }
+
+    main section {
+      padding: 2.2rem 0;
+    }
+
+    .section-heading {
+      margin-bottom: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: end;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      margin-bottom: 0.25rem;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 38rem;
+    }
+
+    .story-grid,
+    .contact-grid,
+    .map-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .info-card,
+    .contact-card,
+    .counter-card {
+      padding: 1.4rem;
+    }
+
+    .info-card h3,
+    .contact-card h3,
+    .counter-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+      color: var(--gold);
+    }
+
+    .quote {
+      font-size: 1.12rem;
+      color: #f4ead8;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 1.2rem;
+    }
+
+    .tag {
+      padding: 0.55rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #efe4d4;
+      font-size: 0.94rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .photo-card {
+      overflow: hidden;
+      min-height: 280px;
+      position: relative;
+    }
+
+    .photo {
+      height: 100%;
+      min-height: 280px;
+      padding: 1.2rem;
+      display: flex;
+      align-items: end;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.75));
+      z-index: -1;
+    }
+
+    .photo.one {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='900' viewBox='0 0 800 900'%3E%3Crect width='800' height='900' fill='%23141514'/%3E%3Ccircle cx='230' cy='270' r='110' fill='%2300ff88' fill-opacity='0.35'/%3E%3Ccircle cx='550' cy='260' r='130' fill='%23ffd700' fill-opacity='0.28'/%3E%3Ccircle cx='430' cy='560' r='170' fill='%23a0d468' fill-opacity='0.4'/%3E%3Ctext x='50%25' y='88%25' text-anchor='middle' fill='%23f7f1e8' font-family='sans-serif' font-size='34'%3E爽口綠意 Placeholder%3C/text%3E%3C/svg%3E");
+    }
+
+    .photo.two {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='900' viewBox='0 0 800 900'%3E%3Crect width='800' height='900' fill='%23110f0d'/%3E%3Ccircle cx='280' cy='320' r='125' fill='%23ff9f5a' fill-opacity='0.33'/%3E%3Ccircle cx='520' cy='300' r='118' fill='%23ffd700' fill-opacity='0.3'/%3E%3Ccircle cx='420' cy='570' r='185' fill='%2300ff88' fill-opacity='0.24'/%3E%3Ctext x='50%25' y='88%25' text-anchor='middle' fill='%23f7f1e8' font-family='sans-serif' font-size='34'%3E療癒系餐盒 Placeholder%3C/text%3E%3C/svg%3E");
+    }
+
+    .photo.three {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='900' viewBox='0 0 800 900'%3E%3Crect width='800' height='900' fill='%23121212'/%3E%3Ccircle cx='240' cy='300' r='110' fill='%23ffd700' fill-opacity='0.34'/%3E%3Ccircle cx='560' cy='280' r='115' fill='%2300ff88' fill-opacity='0.28'/%3E%3Ccircle cx='400' cy='560' r='200' fill='%23f6d365' fill-opacity='0.22'/%3E%3Ctext x='50%25' y='88%25' text-anchor='middle' fill='%23f7f1e8' font-family='sans-serif' font-size='34'%3E銷魂風味 Placeholder%3C/text%3E%3C/svg%3E");
+    }
+
+    .photo-copy strong {
+      display: block;
+      font-size: 1.18rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .photo-copy span {
+      color: #ebdcc8;
+      font-size: 0.95rem;
+    }
+
+    .contact-list,
+    .details-list {
+      display: grid;
+      gap: 0.8rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contact-list li,
+    .details-list li {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-list li:last-child,
+    .details-list li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .label {
+      min-width: 5rem;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .contact-link:hover { color: var(--green); }
+
+    .counter-number {
+      font-size: clamp(2.1rem, 6vw, 3.4rem);
+      font-weight: 900;
+      color: var(--green);
+      line-height: 1;
+      margin: 0.35rem 0 0.65rem;
+      text-shadow: 0 0 18px rgba(0,255,136,0.15);
+    }
+
+    .counter-note {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .map-card {
+      padding: 0.75rem;
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .map-card iframe {
+      width: 100%;
+      min-height: 360px;
+      border: 0;
+      border-radius: 20px;
+      display: block;
+      filter: grayscale(0.2) contrast(1.05);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .site-footer {
+      padding: 1.4rem 0 2.3rem;
+      color: #d8ccb8;
+      text-align: center;
+    }
+
+    .site-footer p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid,
+      .story-grid,
+      .contact-grid,
+      .map-grid,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 5rem;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        gap: 0.75rem;
+        justify-content: flex-start;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn { width: 100%; }
+
+      .plate-note {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .label { min-width: 4.3rem; }
+    }
+  </style>
 </head>
 <body>
-  <section class="menu cid-rznI5aCAdr" once="menu" id="menu1-6">
-
-
-
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-         aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="#top">
-                         <img src="assets/images/3.jpg" alt="Mobirise" title="" style="height: 3.8rem;">
-                    </a>
-                </span>
-                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-5" href="#top">
-               Salade Vi 鮮拌碎沙拉
-                  &nbsp;<br></a></span>
-            </div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Salade Vi 鮮拌碎沙拉首頁">
+        <div class="brand-mark">SV</div>
+        <div>
+          <div class="brand-title">Salade Vi 鮮拌碎沙拉</div>
+          <div class="brand-sub">C'est la vie ／ 這就是生活</div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-        </div>
-    </nav>
-</section>
-
-<section class="engine"><a href="https://mobirise.info/m">free web design templates</a></section><section class="cid-rzaUM99NaS mbr-fullscreen mbr-parallax-background" id="header2-1">
-
-
-
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);"></div>
-
-    <div class="container align-center">
-        <div class="row justify-content-md-center">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Salade Vi 鮮拌碎沙拉<br>&nbsp;</h1>
-            </div>
-        </div>
+      </a>
+      <nav class="nav-links" aria-label="主要導覽">
+        <a href="#story">品牌故事</a>
+        <a href="#gallery">餐點氛圍</a>
+        <a href="#contact">店鋪資訊</a>
+        <a href="#map">找到我們</a>
+      </nav>
     </div>
-    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-        <a href="#next">
-            <i class="mbri-down mbr-iconfont"></i>
-        </a>
-    </div>
-</section>
+  </header>
 
-<section class="mbr-section content4 cid-rzzcCAtlOX" id="content4-b">
-
-
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-               <p>   Salade Vi 鮮拌碎沙拉      </p>  
-                &nbsp;</h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5"><strong>
-                   <p> Salade Vi 鮮拌碎沙拉</p>
-                 <p>   </p>
-   <p>  </p>
-   <p>  </p>
-   <p>  </p>
-   <p>  </p>
-   
-                  
-                  </strong></h3>
-
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="fade-in visible">
+          <div class="eyebrow">✦ Fresh Chopped Salad ・ Dark Dining Mood</div>
+          <h1>大口吃菜，<span class="accent">享受生活</span></h1>
+          <p class="hero-lead">Salade Vi 鮮拌碎沙拉，把清爽、療癒與銷魂的味道，裝進每一份日常裡。</p>
+          <p class="hero-copy">「Salade Vi」念起來像法文 <strong>C'est la vie!</strong>，意思是「這就是生活」。希望大家可以在這裡，輕鬆吃得過癮、吃得漂亮，也吃得很快樂。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+88632873911">立即來電 03-287-3911</a>
+            <a class="btn btn-secondary" href="#map">查看位置</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>11:00–21:00</strong>
+              <span>每天營業，隨時補一碗清爽能量。</span>
             </div>
+            <div class="stat">
+              <strong>Taoyuan</strong>
+              <span>桃園市大園區橫峰里高鐵北路二段182號1樓</span>
+            </div>
+            <div class="stat">
+              <strong>Fresh & Rich</strong>
+              <span>鮮拌、療癒、銷魂，一口就有記憶點。</span>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
 
-<section class="mbr-section article content9 cid-rzzdr4wmVG" id="content9-c">
-
-
-
-    <div class="container">
-        <div class="inner-container" style="width: 100%;">
-            <hr class="line" style="width: 82%;">
-            <div class="section-text align-center mbr-fonts-style display-5"><strong>
-           <p>   🍍「Salade Vi」念起來像「C'est la vie！/這就是生活！」（法文)</p>
-   <p>希望大家可以大口吃菜享受生活❤️</p>
-   <p>#療癒#銷魂</p>
-           <p> #鮮拌碎沙拉</p>
-  <p>#鮮拌碎沙拉</p>
-  <p>#健康#美味!</p>
-           
-      </strong></div>
-
-            <hr class="line" style="width: 82%;">
-        </div>
-        </div>
-</section>
-
-<section class="cid-rzzp61qw19" id="image4-9">
-    <!-- Block parameters controls (Blue "Gear" panel) -->
-
-    <!-- End block parameters -->
-    <div class="container images-container">
-            <div class="media-container-row" style="width: 80%;"> 
-               <div class="img-item item1" style="width: 136%;"> 
-                    <img src="assets/images/1.jpg" alt="" title="">
-
+        <div class="hero-visual fade-in">
+          <div class="hero-card">
+            <div class="hero-plate" role="img" aria-label="Salade Vi 食物形象 placeholder">
+              <div class="plate-note">
+                <div>
+                  <strong>深色美食質感</strong>
+                  <span>以 placeholder 呈現餐點區塊，方便後續替換真實菜色照片。</span>
                 </div>
-                <div class="img-item">
-                    <img src="assets/images/2.jpg" alt="" title="">
-
-                </div>
-               <div class="img-item">
-                 
-  </div>
-</section>
-<section class="cid-rzzaMRCLRX" id="footer2-9">
-    <div class="container">
-        <div class="media-container-row content mbr-white">
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <p class="mbr-text"><strong>營業時間：
-
-<p>星期一:11:00–21:00</p>
-<p>星期二:11:00–21:00</p>
-<p>星期三:11:00–21:00</p>
-<p>星期四:11:00–21:00</p>
-<p>星期五:11:00–21:00</p>
-<p>星期六:11:00–21:00</p>
-<p>星期日:11:00–21:00</p>
-</strong><br><br>
-<br></p>
-    
+                <span>#療癒 #銷魂 #鮮拌碎沙拉</span>
+              </div>
             </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <p class="mbr-text"><strong>地址&nbsp;：&nbsp;</strong><br>
-<br>  地址:	桃園市大園區橫峰里高鐵北路二段182號1樓
-<br>
-<br>
-<br><strong>聯絡方式&nbsp;：&nbsp;<br></strong>
-                 
- <p>  <a href="https://www.facebook.com/saladevi2021/?ref=page_internal"> 鮮拌碎沙拉 FB</a></p>
-  <p> <a href="https://www.instagram.com/salade.vi/?fbclid=IwAR1gNywNE3oCqRzJSYDugHsUHEeVj9zrm50bKn407e_oDscF-pTvDEgmTD8"> 鮮拌碎沙拉 IG</a></p>
-  <p>  E-mail:saladevi2021@gmail.com</a></p>             
-        <p>    鮮拌碎沙拉 Line:@418qloun</a>     </p>                           
-<br><a href="tel:+886-3-2873911">03-287-3911 馬上電話聯絡->鮮拌碎沙拉</a> <br><br></p>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="google-map"><iframe frameborder="0" style="border:0" src=
-                                              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28926.567330178976!2d121.1851064333974!3d25.006200475048107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682157ac1427bd%3A0x42273e14e23c361!2zU2FsYWRlVmnprq7mi4znoo7mspnmi4k!5e0!3m2!1szh-TW!2stw!4v1613276816679!5m2!1szh-TW!2stw" 
-       
-                                              
-          </iframe></div>
-            </div>
-         
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
-
-<section once="footers" class="cid-rznN35r9It" id="footer6-c">
-
-
-
-
-
-    <div class="container">
-        <div class="media-container-row align-center mbr-white">
-            <div class="col-12">
-                <p class="mbr-text mb-0 mbr-fonts-style display-7">
-              
-                
-                  
-                    本網站由<a href="https://scott93723.github.io/Knowledge-Enterprise-Co-Ltd.com/" class="text-success">弘道實業有限公司</a>維護製作
-
-                </p>
-            </div>
+    <section id="story">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <div>
+            <h2>品牌故事</h2>
+            <p>在忙碌生活裡，也值得有一份吃起來清爽、看起來迷人、入口又很滿足的料理。</p>
+          </div>
         </div>
+        <div class="story-grid">
+          <article class="info-card fade-in">
+            <h3>Salade Vi = C'est la vie</h3>
+            <p class="quote">「Salade Vi」念起來像「C'est la vie！」／「這就是生活！」</p>
+            <p>我們想把簡單吃菜這件事，變得更有層次、更有儀式感。不是節制，而是用更舒服的方式，好好照顧自己。</p>
+            <div class="tag-list">
+              <span class="tag">希望大家可以大口吃菜享受生活</span>
+              <span class="tag">療癒</span>
+              <span class="tag">銷魂</span>
+              <span class="tag">鮮拌碎沙拉</span>
+            </div>
+          </article>
+          <article class="info-card fade-in">
+            <h3>店裡的氛圍</h3>
+            <p>整體風格以深黑為底，點綴霓虹綠與金色，像一道好菜該有的光澤：沉穩、飽滿、帶點精緻感。</p>
+            <ul class="details-list">
+              <li><span class="label">主色</span><span>深黑背景 × 霓虹綠 #00ff88 × 金色 #ffd700 × 暖白</span></li>
+              <li><span class="label">感受</span><span>不是 Cyberpunk，而是更成熟、更有食慾的深色美食質感。</span></li>
+              <li><span class="label">適合</span><span>日常午晚餐、想吃輕盈但不要無聊的每一天。</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <div>
+            <h2>餐點氛圍</h2>
+            <p>目前先用 placeholder 呈現視覺區塊，之後可直接替換成品牌實拍照片。</p>
+          </div>
+        </div>
+        <div class="gallery">
+          <article class="photo-card fade-in">
+            <div class="photo one">
+              <div class="photo-copy">
+                <strong>清爽綠意</strong>
+                <span>蔬菜的脆感與光澤，是第一眼就能感受到的新鮮。</span>
+              </div>
+            </div>
+          </article>
+          <article class="photo-card fade-in">
+            <div class="photo two">
+              <div class="photo-copy">
+                <strong>療癒飽足</strong>
+                <span>吃得輕盈，不代表味道要無聊；每口都要有存在感。</span>
+              </div>
+            </div>
+          </article>
+          <article class="photo-card fade-in">
+            <div class="photo three">
+              <div class="photo-copy">
+                <strong>銷魂層次</strong>
+                <span>讓沙拉不只是沙拉，而是一份有情緒、有香氣的正餐。</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <div>
+            <h2>店鋪資訊</h2>
+            <p>想外帶、想路過順便帶一份，或只是想知道今天幾點開門，這裡一次看完。</p>
+          </div>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card fade-in">
+            <h3>基本資訊</h3>
+            <ul class="contact-list">
+              <li><span class="label">地址</span><span>桃園市大園區橫峰里高鐵北路二段182號1樓</span></li>
+              <li><span class="label">電話</span><span><a class="contact-link" href="tel:+88632873911">03-287-3911</a></span></li>
+              <li><span class="label">營業</span><span>每天 11:00-21:00</span></li>
+              <li><span class="label">Email</span><span><a class="contact-link" href="mailto:saladevi2021@gmail.com">saladevi2021@gmail.com</a></span></li>
+            </ul>
+          </article>
+
+          <article class="contact-card fade-in">
+            <h3>聯絡方式</h3>
+            <ul class="contact-list">
+              <li><span class="label">Facebook</span><span><a class="contact-link" href="https://www.facebook.com/saladevi2021/?ref=page_internal" target="_blank" rel="noopener">鮮拌碎沙拉 FB</a></span></li>
+              <li><span class="label">Instagram</span><span><a class="contact-link" href="https://www.instagram.com/salade.vi/?fbclid=IwAR1gNywNE3oCqRzJSYDugHsUHEeVj9zrm50bKn407e_oDscF-pTvDEgmTD8" target="_blank" rel="noopener">@salade.vi</a></span></li>
+              <li><span class="label">Line</span><span><a class="contact-link" href="https://line.me/R/ti/p/@418qloun" target="_blank" rel="noopener">@418qloun</a></span></li>
+              <li><span class="label">快速聯絡</span><span><a class="contact-link" href="tel:+88632873911">馬上電話聯絡 → 鮮拌碎沙拉</a></span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container map-grid">
+        <article class="counter-card fade-in">
+          <h3>來店人氣</h3>
+          <p class="counter-note">使用 counterapi.dev 訪客計數器，載入頁面時自動更新。</p>
+          <div class="counter-number" id="visitCount">--</div>
+          <p class="counter-note">感謝每一位來看看 Salade Vi 的你。這就是生活，這也是我們想分享的美味日常。</p>
+        </article>
+        <article class="info-card fade-in">
+          <h3>營業提醒</h3>
+          <ul class="details-list">
+            <li><span class="label">每日</span><span>11:00-21:00</span></li>
+            <li><span class="label">推薦</span><span>中午帶走一份清爽，晚上吃一份療癒。</span></li>
+            <li><span class="label">位置</span><span>高鐵北路二段，交通方便，順路就能帶走一份好心情。</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container">
+        <div class="section-heading fade-in">
+          <div>
+            <h2>找到我們</h2>
+            <p>保留原本 Google 地圖嵌入，直接導航到 Salade Vi 鮮拌碎沙拉。</p>
+          </div>
+        </div>
+        <div class="map-card fade-in">
+          <iframe
+            title="Salade Vi 鮮拌碎沙拉地圖"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28926.567330178976!2d121.1851064333974!3d25.006200475048107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682157ac1427bd%3A0x42273e14e23c361!2zU2FsYWRlVmnprq7mi4znoo7mspnmi4k!5e0!3m2!1szh-TW!2stw!4v1613276816679!5m2!1szh-TW!2stw">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Salade Vi 鮮拌碎沙拉. C'est la vie!</p>
     </div>
-</section>
+  </footer>
 
+  <script>
+    (function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.16 });
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+      document.querySelectorAll('.fade-in').forEach((el, index) => {
+        if (!el.classList.contains('visible')) {
+          el.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
+        }
+        observer.observe(el);
+      });
+    })();
 
+    (function () {
+      const counterEl = document.getElementById('visitCount');
+      const endpoint = 'https://counterapi.dev/api/saladevi-2077/visits/up';
 
+      fetch(endpoint)
+        .then((response) => {
+          if (!response.ok) throw new Error('Counter API error');
+          return response.json();
+        })
+        .then((data) => {
+          const count = data?.count ?? data?.value ?? data?.visits;
+          counterEl.textContent = typeof count === 'number' ? count.toLocaleString('zh-TW') : '--';
+        })
+        .catch(() => {
+          counterEl.textContent = '--';
+        });
+    })();
+  </script>
 </body>
 </html>
